@@ -1,0 +1,48 @@
+{
+  "name": "@pivotui/worker",
+  "version": "0.1.0",
+  "description": "WebGPU-optimized LLM worker for client-side UI classification",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    },
+    "./worker": {
+      "import": "./dist/worker.js",
+      "types": "./dist/worker.d.ts"
+    }
+  },
+  "files": [
+    "dist/**/*",
+    "README.md"
+  ],
+  "scripts": {
+    "dev": "vite build --mode development --watch",
+    "build": "tsc && vite build",
+    "test": "vitest",
+    "type-check": "tsc --noEmit",
+    "lint": "eslint src --ext .ts,.tsx",
+    "clean": "rm -rf dist"
+  },
+  "dependencies": {
+    "@webgpu/types": "^0.1.63"
+  },
+  "devDependencies": {
+    "typescript": "^5.8.3",
+    "vite": "^5.4.19",
+    "vitest": "^1.6.1"
+  },
+  "peerDependencies": {
+    "typescript": ">=5.0.0"
+  },
+  "keywords": [
+    "webgpu",
+    "llm",
+    "worker",
+    "inference",
+    "machine-learning"
+  ]
+}

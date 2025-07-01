@@ -1,0 +1,68 @@
+{
+  "name": "pivotui",
+  "version": "0.1.0",
+  "description": "Intelligente UI-adaptatie voor AI-antwoorden via on-device LLM",
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@10.12.4",
+  "engines": {
+    "node": ">=18.0.0",
+    "pnpm": ">=8.0.0"
+  },
+  "scripts": {
+    "dev": "pnpm -r --parallel dev",
+    "build": "pnpm -r build",
+    "test": "pnpm -r test",
+    "lint": "pnpm -r lint",
+    "type-check": "pnpm -r type-check",
+    "clean": "pnpm -r clean && rm -rf node_modules",
+    "docs:dev": "pnpm --filter docs dev",
+    "docs:build": "pnpm --filter docs build",
+    "demo:dev": "pnpm --filter demo-app dev",
+    "demo:build": "pnpm --filter demo-app build",
+    "validate-data": "node scripts/validate-data.js",
+    "generate-samples": "node scripts/generate-samples.js",
+    "export-training-data": "node scripts/export-training-data.js"
+  },
+  "workspaces": [
+    "packages/*",
+    "examples/*",
+    "docs"
+  ],
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^8.35.1",
+    "@typescript-eslint/parser": "^8.35.1",
+    "eslint": "^9.30.0",
+    "eslint-config-prettier": "^10.1.5",
+    "eslint-plugin-react": "^7.37.5",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "prettier": "^3.6.2",
+    "typescript": "^5.8.3",
+    "vitest": "^3.2.4"
+  },
+  "keywords": [
+    "react",
+    "typescript",
+    "llm",
+    "webgpu",
+    "ui",
+    "adaptive",
+    "machine-learning",
+    "components"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/pivotui.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/pivotui/issues"
+  },
+  "homepage": "https://github.com/yourusername/pivotui#readme",
+  "license": "MIT",
+  "contributors": [
+    {
+      "name": "PivotUI Contributors",
+      "url": "https://github.com/yourusername/pivotui/graphs/contributors"
+    }
+  ]
+}
