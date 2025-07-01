@@ -24,12 +24,7 @@
     "examples/*/src/**/*",
     "examples/*/app/**/*"
   ],
-  "exclude": [
-    "node_modules",
-    "dist",
-    "build",
-    ".next"
-  ],
+  "exclude": ["node_modules", "dist", "build", ".next"],
   "references": [
     { "path": "./packages/worker" },
     { "path": "./packages/react" },
